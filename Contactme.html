@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Contact Me</title>
+</head>
+<body>
+    <center><h1>Conatct Me</h1></center>
+
+    <select action="#" method="post" ide="contactform"
+        onsubmit="alter('Not implemented yet')">
+        <br ide="fdiv">
+            <label for="myname">Name:</label> <br/>
+            <input type="text" name="myname" ide="myname" required> <br/><br/>
+
+            <label for="myemail">Email:</label> <br/>
+            <input type="email" name="myemail" ide="myemail" required> <br/><br/>
+
+            <label for="subject">Subject:</label> <br/>
+            <input type="type" name="subject" ide="subject"
+                placeholder="CS 101" required> <br/><br/>
+            
+            <textarea name="tbody" ide="tbody" placeholder="Enter message...">required</textarea>
+            <Select for="priority" ide="priority" required></Select>
+            <option disabled selected value>--Select an Option</option>
+            <option value="Low">"Low</option>
+            <option value="med">Med</option>
+            <option value="high">High</option>
+            <option value="critical">critical</option>
+        </select> <br><br/>
+        
+        <label for="attack">Attachments:</label>
+        <input type="file" name="attack" ide="attack"> <br/><br/>
+        <label for="fixup">Do you want a follow up <div class="form-group">
+          <label for="fixup">do you want a follow up email</label>
+          <input type="radio" name="fixup" ide="fixup" value="yes"/>
+          <label for=" fixup" class="flwlbl">Yes</label>
+          
+        </div></label>
+        </div>
+    </form>
+</body>
+</html>
