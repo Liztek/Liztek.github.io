@@ -5,23 +5,68 @@
     <meta lang="en">
     <meta viewport="width=device-width, initial-scale=1">
     <title>Contact Me</title>
+    <style>
+        *{
+            font-size: 18px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+        #sbutton {
+            color: white;
+            background: blueviolet;
+            font-size: 24px;
+            border: 2px solid white;
+            padding: 15px;
+            border-radius: 10px /*round corners off*/
+        }
+
+        body {background: #555;}
+        label {font-weight: bold;}
+        h1 {font-size:28px; color: white;}
+        input {width: 250px;}
+        textarea {min-width: 250px; min-height: 50px;}
+        input,textarea {max-width: 250px;}
+        #flwpy {margin-left:-125px;}
+        #flwpy, #flwpn {margin-right: -100px;}
+        .flwlbl { font-weight: normal;}
+        form {min-width: 550px; margin-bottom: 20px;}
+        .rqd {color: red; font-weight: normal;}
+
+        #attach {
+            background: white; !important;
+            border: 1px solid #777;
+            border-radius: 2px;
+        }
+
+        #fdiv {
+            background: #ccc;
+            border-radius: 5px;
+            width: 50%;
+            text-align: center;
+            margin: 0 auto;
+            /* 30 top/bot, 15 1/r */
+            padding: 30px 15px;
+        }
+    </style>
 </head>
 <body>
     <center><h1>Conatct Me</h1></center>
 
     <select action="#" method="post" ide="contactform"
+    style="text-align:center;"
         onsubmit="alter('Not implemented yet')">
         <br ide="fdiv">
-            <label for="myname">Name:</label> <br/>
+            <label for="myname">Name: <span class="rqd">*</span></label> <br/>
             <input type="text" name="myname" ide="myname" required> <br/><br/>
 
-            <label for="myemail">Email:</label> <br/>
+            <label for="myemail">Email: <span class="rqd">*</span></label> <br/>
             <input type="email" name="myemail" ide="myemail" required> <br/><br/>
 
-            <label for="subject">Subject:</label> <br/>
+            <label for="subject">Subject: <span class="rqd">*</span></label> <br/>
             <input type="type" name="subject" ide="subject"
                 placeholder="CS 101" required> <br/><br/>
-            
+            <span class="rqd">*</span>
+
             <textarea name="tbody" ide="tbody" placeholder="Enter message...">required</textarea>
             <Select for="priority" ide="priority" required></Select>
             <option disabled selected value>--Select an Option</option>
