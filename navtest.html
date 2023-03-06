@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Navigation Bar and media Queries</title>
+    <style>
+        nav {
+            background-color: green;
+            top: 0;
+            left: 0;
+            width: 100%;
+            position: fixed;
+            padding: 10px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 999;
+        }
+        <nav a {
+            color: greenyellow;
+            font-weight: bold;
+            background: #333;
+            padding: 10px;
+            margin-right: -5px;
+        }
+
+        body {
+            background: lightblue; color:black;}
+        
+        /* Media query for screems <= 992px */
+        @media screen and {max-width: 992px}
+        body {background: darkslategrey; color:white;}
+        nav a {
+            display: black;
+            margin-left: 10px;
+            text-align: center;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="atop">Top</a>
+        <a href="#bot">Bottom</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </nav>
+    <div id="top">
+        <br/><br>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in lacus nisi. 
+         Etiam malesuada justo massa, nec porta massa venenatis ut.
+         Vivamus finibus purus vel laoreet porta. 
+         In pharetra vulputate augue nec dapibus. 
+         Aenean ac mi fringilla, cursus sem sit amet, pretium lectus. 
+         Nullam quis elit efficitur lorem tincidunt feugiat non vel eros. 
+         Maecenas ultricies dolor in dui finibus, at accumsan ex commodo.
+        Integer non pharetra libero, id consequat dolor. Sed quis dignissim justo. 
+        Suspendisse lobortis lectus mauris, scelerisque varius dui aliquet id. 
+        Fusce fermentum augue vitae mauris ultricies ullamcorper. 
+        Phasellus lobortis congue tellus sit amet tincidunt. 
+        Curabitur ultricies dolor non odio condimentum vehicula. 
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+        Sed in bibendum eros. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+        In hac habitasse platea dictumst. Nulla efficitur fermentum cursus. Proin sit amet suscipit magna, id sollicitudin justo.
+        Fusce a vehicula justo, ac dapibus lacus. 
+        Sed at consectetur sem. Proin ultricies, odio quis auctor lacinia, nulla ligula fermentum mi, nec tempor lectus justo ut augue. Aliquam velit tellus, molestie vitae sem vel, sagittis pellentesque lorem. 
+        Praesent placerat sit amet turpis nec gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla fermentum arcu tellus, ut laoreet diam suscipit ullamcorper. Duis blandit eu sem vel aliquet. 
+        Nullam ut maximus justo. Nullam sagittis risus eget dolor porttitor, a luctus ante lacinia. Vestibulum maximus erat purus, in egestas leo tincidunt viverra.
+        Morbi convallis nulla massa, a faucibus ante condimentum a. Etiam aliquet ante in venenatis ornare. Sed sed dictum arcu. Suspendisse et aliquam diam. Duis metus lorem, faucibus quis purus malesuada, facilisis posuere ligula. Cras feugiat lorem nec sem commodo tincidunt. Sed molestie, ex ut blandit hendrerit, ex ipsum accumsan ex, sit amet mattis libero arcu non ante.
+        In id ipsum ultrices, pharetra dui eget, congue tortor. Aliquam scelerisque rutrum tincidunt. Pellentesque eget faucibus leo. Fusce varius tortor quis tellus ullamcorper, at varius nulla cursus. Vivamus sit amet gravida sem. Duis id rhoncus mi, non ultricies sem. Phasellus dignissim odio diam, eu pharetra mi lobortis a. Aenean sapien nisl, tristique id urna in, rutrum sagittis neque. Donec porttitor laoreet erat in hendrerit. Morbi condimentum, lectus quis dignissim consectetur, mi lacus tristique metus, in ultrices dui nisl ac justo. Cras dapibus vestibulum lacinia. Nulla tempus sapien at scelerisque ullamcorper. Nunc eleifend interdum ligula, et faucibus magna. Sed et ante posuere orci lobortis malesuada.
+        </p>
+    </div>
+    <div ide="bot"> 
+        <b>This is the bottom of the page!</b>
+    </div>
+</body>
+</html>
