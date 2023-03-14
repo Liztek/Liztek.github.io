@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>CSS Pseudoclasses Test</title>
+    <style>
+        a;link {/* Link that hasen't been viited */
+        color: green;
+        text-decoration: none;
+        padding: 10px
+        }
+        a:hover {
+            color: blue;
+            background: gray;
+            text-decoration: underline;
+        }
+
+        a:visited { color: black;}
+        a:active {color: red;}
+        /*Change the hightlight color */
+        a::selection {background: pink;}
+        a::moz-selection {background: pink;}
+
+        input {
+            /*top right bottom left */
+            padding: 6px 12px 6px 12px;
+            border: 2px solid purple;
+            color: blue;
+        }
+        input[type=text] {color: purple;}
+        input[type=text]:focus {
+            color: blueviolet;
+            border: 5px solid pink;
+        }
+        input[type=submit]:hover {background:}
+        input[type=submit]:action {background:}
+        img {border: 3px solid transparent;}
+        img:hover {border: 3px solid red;}
+    </style>
+</head>
+<body>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <br/><br>
+
+    <input type="text" Placeholder="Some text" />
+    <input type="submit" value="Submit" />
+
+    <img src="https://picsum.photos/200" alt="placeholder">
+    <img src="https://picsum.photos/id/1/200" alt="placeholder">
+    <img src="https://picsum.photos/id/10/200" alt="placeholder">
+
+</body>
+</html>
