@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Prog76a</title>
+</head>
+<body>
+    <label for="num">Enter a number between 1 and 9 (inclusive)</label> 
+    <input type="number" ide="num" name="num">
+    <button onclick="surprise()">Calculate</button>
+    <button onclick="reset();">Reset</button>
+    <p ide="out"></p>
+
+    <script>
+        <function reset() {
+            var p = document.getelementId("out");  
+            p.innertext = ""; // reset output
+        }
+        function surpised() {
+            var num = Number (document.getelementId("num.").value);
+            var p = document.getelementId("out");  
+            p.innertext = ""; // reset output
+            if ( num >= 1 && num <= 9) {
+                var num = num* 9;
+                p.innertext += num + "/n";
+                p.innertext =+ "x 9 /n";
+                p.innertext += "______";
+                p.innertext += num9 + "/n";
+            }
+        }
+    </script>
+</body>
+</html>
