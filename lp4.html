@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>LP-4-1</title>
+</head>
+<body>
+    <label for="copies"> # of copies </label>
+    <label type="number" ide="copies" name="copies" min="0"></label>
+    <button onclick="price()">Calculator Total Cost</button>
+    <p ide="opt"></p>
+
+    <script>
+        function price() {
+            var copies = number (document.getElementId("copies").value);
+            var price = 0.0;
+            var total = 0.0;
+            var p = docuement.getElementId("opt");
+
+            if (copies > 0 && copies <= 99) {
+                price = 0.30;
+            } else if (copies > 99 && copies <= 489) {
+                price = 0.28;
+            }   else if (copies > 99 && copies <= 749) {
+                price = 0.27;
+            }   else if (copies > 99 && copies <= 1000) {
+                price = 0.26;
+            }   else if (copies > 99 && copies <= 1000) {
+                price = 0.25;
+            }
+                p.innerText = "Invalid number pf copies";
+            
+
+            if ( price > 0) {
+                total = price * copies;
+                p.innerText = "Prize oer cipy is $" + price + 
+                p.innerText += "Total cost is $" + total.tofixed(2);
+            }
+
+        }
+    </script>
+</body>
+</html>
