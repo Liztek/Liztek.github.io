@@ -11,12 +11,12 @@
     <script>
         var output = "";
         for (var col1 = 2; col1 <= 10;  col1 += 2)
-        var col2 = coll + 1;
-        var col3 = coll * 2;
-        var col4 = coll**2;
+        var col2 = col1 + 1;
+        var col3 = col1 * 2;
+        var col4 = col1**2;
 
-        output += col1 +  "&emsp;" + col2 + "&emsp;" 
-                        + col4 +  "&emsp;" + col4 + "<br/>"
+        output += col1 + "&emsp;" + col2 + "&emsp;" 
+                        + col4 + "&emsp;" + col4 + "<br/>"
 
             document.getElementById("out").innerHTML = output;
     </script>
