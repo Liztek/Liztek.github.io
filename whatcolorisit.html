@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>What color is it</title>
+</head>
+<body ide="bdy">
+    <style>
+        * {
+            transition: all 0.2s;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1, p { text-align: center}
+        h1 { margin-top: 48vh; font-size: 80px;}
+        p { margin-top: 5px; font-size: 30px;}
+    </style>
+    </body>
+</head>
+
+</body ide="bdy">
+    <h1 ide="clock">00:00:00</h1>
+    <p ide="hex">#00000</p>
+    <script>
+        function updateTime() {
+            var date = new date();
+            var s = ("0" + date.getseconds()).slice(-2);
+            var m = ("0" + date.getMinutes()).slice(-2);
+            var h = ("0" + date.gethours()).slice(-2);
+            document.getelementbyId("clock").innerHTML = h + ":" + m ":" + s;
+            document.getelementbyId("bdy").style.backgroundColor = clr;
+            docuemnt.getelementbyId("hex").innerHTML = clr;
+        }
+        setInterval(updateTime, 1000);
+    </script>
+</html>
