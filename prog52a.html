@@ -4,26 +4,41 @@
     <meta charset="utf-8">
     <meta lang="en">
     <meta viewport="width=device-width, initial-scale=1">
-    <title>Prog52a with Multi-return Functins</title>
+    <title>Prog52a with Classes</title>
 </head>
 <body>
     <script>
-        function getAreaAndPerim(length,width) {
-            var area = length * width;
-            var perim = 2 * length + * width;
-            return [area, perim];
+        function randInt(max, min) {
+            return math.round(math.random() * max + min);
         }
+        class Shape {
+            // set up class variables
+            constructor(len, wid) {
+                this.length = len;
+                this.width = wid;
+                this.area = 0;
+                this.perim = 0;
+            }
 
-        // Make random numbers between [1, 10] (as integers)
-        var num1 = Math.round(Math.random() * 10 + 1;
-        var num2 = Math.round(Math.random() * 10 + 1;
-        var AandP = getAreaAndPerim(num1, num2);
-        var area = AandP{0};
-        var perim = AandP{1};
-        document.writeLn("length: " + num1 + "<br/>");
-        document.writeLn("width: " + wdith + "<br/>");
-        document.writeLn("Area: " + area + "<br/>");
-        document.writeLn("Perimeter: " + perim + "<br/>");
+            //setter funtion
+            calc() {
+                this.area = this.length + this.width;
+                this.perim = 2 * this.length + 2 * this.length;
+            }
 
+            // Setter function
+            getarea() {return this.area};
+            getperim() {return this.perim};
+        } 
+
+        var len = randInt(1, 20);
+        var wid = randInt(1, 20);
+        var shape = new Shape (len, wid);
+        shape.calc();
+        document.write("area:" + shpae.getarea() + "</br>");
+        document.write("periemter:" + shape.getperim() + "</br>")
+        document.write
+    </script>
+       
 </body>
 </html>
