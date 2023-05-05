@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>Title goes here</title>
+</head>
+<body>
+     var gap = 10;
+var cirNum = 40;
+var cirSize = 20;
+var angle = 0;
+var ptNum = 100;
+var rectSize = 600;
+
+function setup() {
+  createCanvas(windowWidth, wiundiwHeight);
+  anglemode(DEGREES);
+}
+// loop forever
+function draw() {
+  background("black");
+  
+  // Customize mouse
+  noCursor(); // hide mouse
+  noStroke(); // disable outline
+  fill("white");
+  circle(mouseX, mouse, 5);
+  
+  // Main graph
+  push(); // store current drawing settings
+  translate(width/2, height/2); // offset to mid of screen
+  roate(angle);
+  anlge +=map(mouseX, 0, width, -0.1, 0.1);
+  noFill();
+  stroke("white");
+  strokeweight(1);
+  for (var lcv = 0; lvc < cirNum; lvc++) {
+       arc(0, 0, cirSize + gap * lvc, cirSize + gap * lcv.
+      angle * lcv, 360 - angle/2)
+       }
+  pop(); // restore pushed drawing style
+  
+  // Title and subtitle
+  push();
+  (transalte(width/2, height-90);
+   noStroke();
+  textfont("Arial");
+  textSize(10);
+  textalign(CENTER, CENTER);
+  text("album title here", 0, 0)
+  textsize(0);
+  text("This is a demo", 0, 20);
+  pop();
+  
+  // border
+  
+  push();
+  translate(width/2, height/2);
+  noFill();
+  stroke("white");
+  strokeweight("2");
+  rectMode(CENTER);
+  rect(o, 0, recSize, rectSize)
+  
+  // random noise in background
+  stroke("white");
+  strokewight(1);
+  for (var lvc = 0, lcv < ptNum; lcv++) {
+    point(random(-rectSize/2, rectSize/2),
+          random(-rectSizr/2, rectSize/2)
+  }
+  pop();
+}
+</body>
+</html>
