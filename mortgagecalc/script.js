@@ -1,5 +1,5 @@
 function reset() {
-    var p = document.getElementById("0ut");
+    var p = document.getElementById("out");
     p.innerText = "";
 }
 function price() {
