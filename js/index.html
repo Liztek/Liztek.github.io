@@ -31,7 +31,7 @@
     </style>
 </head>
 <body>
-    <script>
+    
        <p id="out"></p>
        <label for="p">Principal: </label>
        <input type="number" ide="p" name="p" min="0">
@@ -48,21 +48,22 @@
         <button onclick="price()">Calculate</button><br/><br/>
         <button onclick="reset()">Reset</button>
 
-    </script>
+    <script>
         function reset() {
             var p = document.getElementById("0ut");
             p.innerText = "";
         }
         function price() {
             var n = 12
-            var p = document.getelementById("p").value
-            var r = document.getelementById("r").value
-             var t = document.getelementById("t").value
-            var m= document.getelementById("m").value
+            var p = Number(document.getelementById("p").value)
+            var r = Number(document.getelementById("r").value)
+             var t = Number(document.getelementById("t").value)
+            var m= Number(document.getelementById("m").value)
             var B = p * (1 + r / n)** (n * t) - (m * ((1+ r/n)** (n * t)- 1)/ (r / n));
-            document class="getElementById("out").innerHTML="$" + B.toFixed(2);
+            document.getElementById("out").innerHTML="$" + B.toFixed(2);
+            
 
         }
-
+        </script>
 </body>
 </html>
