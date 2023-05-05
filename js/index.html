@@ -8,22 +8,37 @@
 </head>
 <body>
     <script>
-        <label type="Principal" ide="out" name="principal">
-        <label for="Principal">
-        <label type="interest rate as %" ide="out" name="interest rate as %">
-        <label for="Interest rate as %">
-        <label type="numbers of years:" ide="out" name="Number of years">
-        <label for="number of years">
-        <label type="Monthly payment" ide="out" name="monthly payment">
-        <label for="monthly payment">
+       <p id="out"></p>
+       <label for="p">Principal: </label>
+       <input type="number" ide="p" name="p" min="0">
+       <br/><br/>
+        <label for="r">Interest rate (e.g. 7.9% = 0.079): </label>
+        <input type="number" ide="r" name="r" min="0">
+        <br/><br/>
+        <label for="t">Numbers of years: </label>
+        <input type="number" id="t" name="t" min="0">
+         <br/><br/>
+        <label for="m">Monthly payment: </label>
+        <input type="number" id="m" name="m" min="0">        
+        <br/><br/>
+        <button onclick="price()">Calculate</button><br/><br/>
+        <button onclick="reset()">Reset</button>
 
-
-        <button onclick="calculate();">Calculate</button>
-    <p ide="output"></p>    
-        <button onclick="reset();">Reset</button>
-    <p ide="output"></p>
-
-    
     </script>
+        function reset() {
+            var p = document.getElementById("0ut");
+            p.innerText = "";
+        }
+        function price() {
+            var n = 12
+            var p = document.getelementById("p").value
+            var r = document.getelementById("r").value
+             var t = document.getelementById("t").value
+            var m= document.getelementById("m").value
+            var B = p * (1 + r / n)** (n * t) - (m * ((1+ r/n)** (n * t)- 1)/ (r / n));
+            document class="getElementById("out").innerHTML="$" + B.toFixed(2);
+
+        }
+        
 </body>
 </html>
