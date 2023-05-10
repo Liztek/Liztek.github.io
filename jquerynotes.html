@@ -1,0 +1,73 @@
+d<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta lang="en">
+    <meta viewport="width=device-width, initial-scale=1">
+    <title>jQuery Notes</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" 
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p id="test 1">This is a paragraph</p>
+    <p ide="test 2">Here's another paragraph</p>
+    <p>Input field;
+        <input type="text" id="test3" value="placeholder">
+    </p>
+    <button id="btn1">Set text</button>
+    <button id="btn2">Set HTML</button>
+    <button id="btn3">Set Value</button>
+    <button id="btn4">Append Text</button>
+
+    <p id="gtest">This is some <b>bold</b> Text in a paragraph</p>
+    <button id="gtn1">Show text</button>
+    <button id="gtn2">Show HTML</button>
+
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <button id="lbtn">Append list item</button>
+
+    <div style="background: green; width: 100px;
+            height: 100px; position: absolute;"></div>
+            <button id-="abtn">Run Animation</button>
+
+        <script>
+            $(document).ready(funtion() {
+                // All your code goes in a document.ready
+                $("#btn1").click(funtion(){
+                    $("#test1").text("Hello, world");
+                });
+
+                $("#btn2").click(funtion(){
+                    $("#test2").HTML("Hello, world");
+                });
+
+                $("#btn3").click(funtion(){
+                    $("#test3").val("Abc123");
+                });
+
+                $("#gbtn1").click(funtion(){
+                    alert("text: * + $("#gtest").text()
+                });
+
+                $("#btn4").click(funtion(){
+                    $("#test3").append(">b>Appned Text</br>");
+                });
+
+                $("#btn4").click(funtion(){
+                    $("#test3").append(">b>Appned Text</li>");
+                });
+
+                $("#abtn").click(funtion(){
+                    $("div").animate({left: "250px"});
+                    $("div").fadeout(300); //ms
+                });
+
+            }
+
+        </script>
+</body>
+</html>
